@@ -3,17 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #eaeaea;
 }
 
 
 header {
     background: white;
-    padding: 15px;
-    text-align: left;
-    font-size: 24px;
+    padding: 15px 20px;
+    font-size: 28px;
     font-weight: bold;
     border-bottom: 2px solid #ccc;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav ul {
@@ -50,7 +53,7 @@ main {
 }
 
 .product img {
-    width: 250px;
+    width: 300px;
     border: 1px solid #ccc;
 }
 
@@ -58,18 +61,31 @@ main {
     flex: 1;
 }
 
+.product h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
 .product p {
     font-size: 14px;
     line-height: 1.6;
 }
 
+.product p strong {
+    color: red;
+    font-size: 18px;
+}
+
 
 button {
-    background: #ddd;
+    background: linear-gradient(to bottom, #f8f8f8, #ddd);
     border: 1px solid #aaa;
-    padding: 8px 12px;
+    padding: 10px 15px;
     margin-top: 10px;
     cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #bbb;
 }
 
 button:hover {
@@ -77,8 +93,9 @@ button:hover {
 }
 
 button:last-of-type {
-    background: #007bff;
+    background: linear-gradient(to bottom, #4285f4, #357ae8);
     color: white;
+    font-weight: bold;
 }
 
 button:last-of-type:hover {
@@ -93,7 +110,7 @@ table {
 }
 
 th, td {
-    padding: 5px;
+    padding: 6px 10px;
     border-bottom: 1px solid #ccc;
     text-align: left;
 }
@@ -112,17 +129,20 @@ th {
     width: 150px;
     text-align: center;
     margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: white;
 }
 
 .product-item img {
     width: 100%;
     height: auto;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .product-item a {
     text-decoration: none;
-    color: black;
+    color: blue;
     font-size: 14px;
     display: block;
     margin-top: 5px;
