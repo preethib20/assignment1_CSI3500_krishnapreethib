@@ -13,17 +13,16 @@ header {
     font-size: 28px;
     font-weight: bold;
     border-bottom: 2px solid #ccc;
-    text-align: center;
 }
 
 nav {
-    text-align: center;
     margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -51,7 +50,6 @@ main {
 
 .product {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     gap: 20px;
 }
@@ -59,6 +57,10 @@ main {
 .product img {
     width: 300px;
     border: 1px solid #ccc;
+}
+
+.product-content {
+    flex-grow: 1;
 }
 
 .product h2 {
@@ -138,11 +140,15 @@ th {
     margin-bottom: 10px;
 }
 
+.similar-products-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
 .product-item {
-    display: inline-block;
     width: 160px;
     text-align: center;
-    margin-right: 10px;
     border: 1px solid #ccc;
     padding: 5px;
     background: white;
