@@ -1,66 +1,59 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
-
 
 header {
-    background: white;
-    padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    border-bottom: 2px solid #ccc;
+    background-color: #eaeaea;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
 }
 
-nav {
-    margin-top: 10px;
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #444;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
+nav ul li a:hover {
+    background-color: #dcdcdc;
+}
 
 main {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #ccc;
-}
-
-
-.product {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
 }
 
 .product img {
-    width: 300px;
-    border: 1px solid #ccc;
-}
-
-.product-content {
-    flex-grow: 1;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 .product h2 {
@@ -70,106 +63,80 @@ main {
 
 .product p {
     font-size: 14px;
-    line-height: 1.6;
+    margin: 5px 0;
 }
 
-.product p strong {
-    color: red;
-    font-size: 18px;
-}
-
-
-button {
-    background: linear-gradient(to bottom, #f8f8f8, #ddd);
-    border: 1px solid #aaa;
-    padding: 10px 15px;
-    margin-top: 10px;
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px #bbb;
 }
 
-button:hover {
-    background: #ccc;
+.product button:hover {
+    background-color: #45a049;
 }
 
-button:last-of-type {
-    background: linear-gradient(to bottom, #4285f4, #357ae8);
-    color: white;
-    font-weight: bold;
-}
-
-button:last-of-type:hover {
-    background: #0056b3;
-}
-
-
-.product-details {
+.product-details h4,
+.similar-products h4 {
     margin-top: 20px;
-}
-
-.product-details h4 {
     font-size: 18px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 
-table {
+.product-details table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-th, td {
-    padding: 8px 12px;
-    border-bottom: 1px solid #ccc;
+.product-details table th,
+.product-details table td {
     text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
 }
-
-th {
-    font-weight: bold;
-}
-
 
 .similar-products {
     margin-top: 20px;
 }
 
-.similar-products h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.similar-products-container {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-}
-
-.product-item {
-    width: 160px;
+.similar-products .product-item {
+    display: inline-block;
+    width: 22%;
+    margin-right: 3%;
     text-align: center;
-    border: 1px solid #ccc;
-    padding: 5px;
-    background: white;
+    vertical-align: top;
 }
 
-.product-item img {
+.similar-products .product-item img {
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 5px;
 }
 
-.product-item a {
-    text-decoration: none;
-    color: blue;
+.similar-products .product-item p {
     font-size: 14px;
-    display: block;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 
-.product-item button {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
+.similar-products .product-item button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.similar-products .product-item button:hover {
+    background-color: #0056b3;
 }
