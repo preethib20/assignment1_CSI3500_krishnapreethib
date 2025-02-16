@@ -60,9 +60,9 @@ nav ul li a:hover {
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 400px; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
 .image-overlay {
