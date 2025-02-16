@@ -52,3 +52,102 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
 }
+
+
+.product-container {
+    display: flex;
+    background: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.product {
+    width: 40%;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.product-info {
+    width: 60%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+button {
+    display: inline-block;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+
+.product-details {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+td {
+    color: #555;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
