@@ -3,26 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; 
-    color: #333; 
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 
 header {
-    background-color: #fff; 
-    color: #333; 
+    background-color: #fff;
     padding: 20px;
-    border-bottom: 1px solid #ddd; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
-    font-weight: bold;
 }
 
 nav ul {
@@ -30,73 +24,45 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-}
-
-nav ul li {
-    margin-right: 15px; 
+    gap: 15px;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
-    font-size: 16px;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #007bff; 
 }
 
 
 main {
     padding: 20px;
-    background-color: #fff; 
+    background-color: #fff;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
+h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333; 
 }
 
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
+.form-section {
+    margin-bottom: 20px;
 }
 
-fieldset {
-    border: 1px solid #ddd; 
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #f9f9f9; 
-}
-
-legend {
+.form-section h3 {
     font-size: 20px;
-    font-weight: bold;
-    color: #333; 
-    padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-weight: bold;
-    color: #555; 
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-input[type="date"],
-input[type="color"],
-select {
+input, select, button {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -105,53 +71,13 @@ select {
     font-size: 16px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus,
-input[type="color"]:focus,
-select:focus {
-    border-color: #007bff; 
-    outline: none;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-button[type="submit"] {
-    background-color: #007bff; 
+button {
+    background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3; 
-}
-
-
-input::placeholder {
-    color: #999; 
-}
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    fieldset {
-        padding: 15px;
-    }
+button:hover {
+    background-color: #0056b3;
 }
