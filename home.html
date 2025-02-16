@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles_1.css"> 
 </head>
 <body>
-
+    
     <header>
         <h1>Art Store</h1>
         <nav>
@@ -25,8 +25,8 @@
         <h2>Customer Registration</h2>
         <form>
             
-            <fieldset>
-                <legend>1. User Info</legend>
+            <div class="form-section">
+                <h3>1. User Info</h3>
                 <label for="firstName">First Name</label>
                 <input type="text" id="firstName" name="firstName" required>
 
@@ -41,11 +41,11 @@
 
                 <label for="passwordRepeat">Password Repeat</label>
                 <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="at least 8 characters" minlength="8" required>
-            </fieldset>
+            </div>
 
             
-            <fieldset>
-                <legend>2. Location</legend>
+            <div class="form-section">
+                <h3>2. Location</h3>
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address" required>
 
@@ -74,11 +74,11 @@
                     <option value="Europe">Europe</option>
                     <option value="South America">South America</option>
                 </select>
-            </fieldset>
+            </div>
 
             
-            <fieldset>
-                <legend>3. Personal Details</legend>
+            <div class="form-section">
+                <h3>3. Personal Details</h3>
                 <label for="birthDay">Birth Day</label>
                 <input type="date" id="birthDay" name="birthDay" required>
 
@@ -91,18 +91,18 @@
                     <option value="Love">Love</option>
                     <option value="Other">Other</option>
                 </select>
-            </fieldset>
+            </div>
 
-            
-            <fieldset>
-                <legend>4. All Done</legend>
+           
+            <div class="form-section">
+                <h3>4. All Done</h3>
                 <label>
                     <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
                     I agree to the Terms of the Site
                 </label>
 
                 <button type="submit">Sign me up!</button>
-            </fieldset>
+            </div>
         </form>
     </main>
 </body>
